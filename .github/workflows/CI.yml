@@ -26,14 +26,21 @@ jobs:
     
     - name: Clean Install dependencies and Build
       run: |
-          yarn install
+          yarn install --network-timeout 1000000
           rm -rf build
           yarn build
-
+    
+    - name: Run linters ✅
+      uses: wearerequired/lint-action@v1
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # Enable linters
+          eslint: true
+          prettier: true
+    
     - name: Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@3.7.1
       with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BRANCH: gh-pages # The branch the action should deploy to.
           FOLDER: build # The folder the action should deploy.
