@@ -136,12 +136,13 @@
     },
     "husky": {
         "hooks": {
-            "pre-commit": "lint-staged && yarn lint"
+            "pre-commit": "lint-staged"
         }
     },
     "lint-staged": {
         "src/**/*.js": [
-            "eslint src --ext .js",
+            "eslint --fix --ext .tsx,.ts,.js src/",
+            "eslint --ext .tsx,.ts,.js src/",
             "prettier --write",
             "git add"
         ]
