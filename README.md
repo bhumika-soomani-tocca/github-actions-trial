@@ -1,3 +1,5 @@
+![Lint Code Base](https://github.com/bhumika-soomani-tocca/github-actions-trial/workflows/Lint%20Code%20Base/badge.svg?branch=develop)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
