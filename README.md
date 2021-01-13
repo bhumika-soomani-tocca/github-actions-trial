@@ -1,4 +1,5 @@
 [![Lint Code Base](https://github.com/bhumika-soomani-tocca/github-actions-trial/workflows/Lint%20Code%20Base/badge.svg?branch=develop)](https://github.com/bhumika-soomani-tocca/github-actions-trial/actions)
+[![Build and Deploy](https://github.com/bhumika-soomani-tocca/github-actions-trial/workflows/Build%20and%20Deploy/badge.svg?branch=master)](https://github.com/bhumika-soomani-tocca/github-actions-trial/actions)
 
 # Getting Started with Create React App
 
